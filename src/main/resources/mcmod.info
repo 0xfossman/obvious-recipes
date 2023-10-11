@@ -1,0 +1,16 @@
+[
+{
+  "modid": "obviousrecipes",
+  "name": "§6Obvious §2Recipes§r",
+  "description": "Crafting Recipes that Mojang should have added.",
+  "version": "1.0",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["domi382"],
+  "credits": "Credit to me lol",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
