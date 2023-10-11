@@ -1,5 +1,5 @@
 <h1 align="center">Welcome to obvious-recipes 👋</h1>
-<img style="margin-left:auto; margin-right:auto;" src="logo.png" />
+<p align="center"><img src="logo.png" /></p>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
   <a href="#" target="_blank">
