@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        " g ",
+        " b ",
+        "hhh"
+    ],
+    "key":
+    {
+        "g":
+        {
+            "item": "minecraft:golden_helmet"
+        },
+        "b":
+        {
+            "item": "minecraft:gold_block"
+        },
+        "h":{
+            "item": "minecraft:potion",
+            "potion": "healing"
+        }
+    },
+    "result":
+    {
+        "item": "minecraft:totem_of_undying"
+    }
+}

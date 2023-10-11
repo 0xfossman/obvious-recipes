@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "ggg",
+        "g g",
+        "gsg"
+    ],
+    "key":
+    {
+        "g":
+        {
+            "item": "minecraft:leather"
+        },
+        "s":
+        {
+            "item": "minecraft:lead"
+        }
+    },
+    "result":
+    {
+        "item": "minecraft:saddle"
+    }
+}
