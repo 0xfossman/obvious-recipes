@@ -1,4 +1,4 @@
-package com.domi382.obviousrecipes;
+package com.fossman.obviousrecipes;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -6,8 +6,8 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
-import com.domi382.obviousrecipes.recipes.SmeltingRecipes;
-import com.domi382.obviousrecipes.utils.CraftingHandler;
+import com.fossman.obviousrecipes.recipes.SmeltingRecipes;
+import com.fossman.obviousrecipes.utils.CraftingHandler;
 
 @Mod(modid = obviousrecipes.MODID, name = obviousrecipes.NAME, version = obviousrecipes.VERSION)
 public class obviousrecipes

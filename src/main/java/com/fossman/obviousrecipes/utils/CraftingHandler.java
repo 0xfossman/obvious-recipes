@@ -1,4 +1,4 @@
-package com.domi382.obviousrecipes.utils;
+package com.fossman.obviousrecipes.utils;
 
 import java.util.ArrayList;
 import com.google.common.collect.Lists;

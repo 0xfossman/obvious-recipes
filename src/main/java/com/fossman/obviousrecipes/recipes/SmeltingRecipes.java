@@ -1,4 +1,4 @@
-package com.domi382.obviousrecipes.recipes;
+package com.fossman.obviousrecipes.recipes;
 
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
