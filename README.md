@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to obvious-recipes 👋</h1>
 <p align="center"><img src="logo.png" /></p>
-<p>
+<p align="center">
   <img alt="Version" src="https://img.shields.io/badge/version-1.1-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/0xFOSSMan/obvious-recipes/actions/workflows/gradle.yml"><img alt="Java CI with Gradle" src="https://github.com/0xFOSSMan/obvious-recipes/actions/workflows/gradle.yml/badge.svg?branch=main" /></a>
   <a href="#" target="_blank">
