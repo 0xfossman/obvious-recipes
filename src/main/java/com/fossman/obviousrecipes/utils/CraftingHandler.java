@@ -10,7 +10,7 @@ import net.minecraftforge.registries.ForgeRegistry;
 
 public class CraftingHandler {
 	public static void RegisterRecipes() {
-        
+        /* TODO find a way to register crafting recipes w/o Forge interfering */
 	}
 
 	public static void removeRecipes() {

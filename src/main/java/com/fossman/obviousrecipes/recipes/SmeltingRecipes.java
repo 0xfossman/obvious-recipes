@@ -10,7 +10,7 @@ public class SmeltingRecipes{
         final float xp = 1.0F;
         //Rotten Flesh -> Leather
         GameRegistry.addSmelting(Items.ROTTEN_FLESH,        new ItemStack(Items.LEATHER, 1), xp);
-        /*
+        /* TODO Replace Vanilla Crafting Recipes (seems kinda impossible)
         //Deactivated until I find a solution for replaceing Vanilla Smelting Recipes
         //Iron Stuff -> Iron Ingot (instead of Iron Nugget)
         GameRegistry.addSmelting(Items.IRON_HELMET,         new ItemStack(Items.IRON_INGOT, 1), xp);
