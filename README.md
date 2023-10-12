@@ -4,6 +4,7 @@
   <!--<img alt="Version" src="https://img.shields.io/badge/version-1.1-blue.svg?cacheSeconds=2592000" />-->
   <img alt="Version" src="https://img.shields.io/github/v/tag/0xfossman/Obvious-Recipes" />
   <a href="https://github.com/0xFOSSMan/obvious-recipes/actions/workflows/gradle.yml"><img alt="Java CI with Gradle" src="https://github.com/0xFOSSMan/obvious-recipes/actions/workflows/gradle.yml/badge.svg?branch=main" /></a>
+  <img alt="Downloads" src="https://img.shields.io/github/downloads/0xfossman/obvious-recipes/total">
   <a href="#" target="_blank">
     <img alt="License: GPL--3.0" src="https://img.shields.io/badge/License-GPL--3.0-yellow.svg" />
   </a>
