@@ -6,6 +6,7 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.registries.ForgeRegistry;
 
 public class CraftingHandler {
@@ -23,6 +24,7 @@ public class CraftingHandler {
             if (output.getItem() == Items.GOLDEN_APPLE)
             {
                 recipeRegistry.remove(r.getRegistryName());
+                recipeRegistry.register(IRecipe DummyRecipe.getCraftingResult())
             }
         }
 	}
