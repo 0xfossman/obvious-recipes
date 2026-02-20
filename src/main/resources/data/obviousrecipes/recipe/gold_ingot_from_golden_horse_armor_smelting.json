@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smelting",
+    "category": "misc",
+    "ingredient": {
+        "item": "minecraft:golden_horse_armor"
+    },
+    "result": {
+        "id": "minecraft:gold_ingot"
+    },
+    "experience": 1.0,
+    "cookingtime": 200
+}

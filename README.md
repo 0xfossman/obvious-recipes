@@ -1,28 +1,42 @@
-<h1 align="center">Welcome to obvious-recipes 👋</h1>
-<p align="center"><img src="logo.png" /></p>
+<h1 align="center">Obvious Recipes</h1>
+<p align="center"><img src="logo.png" width="220" alt="Obvious Recipes logo" /></p>
+
 <p align="center">
-  <!--<img alt="Version" src="https://img.shields.io/badge/version-1.1-blue.svg?cacheSeconds=2592000" />-->
-  <img alt="Version" src="https://img.shields.io/github/v/tag/0xfossman/Obvious-Recipes" />
-  <a href="https://github.com/0xFOSSMan/obvious-recipes/actions/workflows/gradle.yml"><img alt="Java CI with Gradle" src="https://github.com/0xFOSSMan/obvious-recipes/actions/workflows/gradle.yml/badge.svg?branch=main" /></a>
-  <img alt="Last commit" src="https://img.shields.io/github/last-commit/0xfossman/obvious-recipes/main" />
-  <img alt="Downloads" src="https://img.shields.io/github/downloads/0xfossman/obvious-recipes/total">
-  <a href="#" target="_blank">
-    <img alt="License: GPL--3.0" src="https://img.shields.io/badge/License-GPL--3.0-yellow.svg" />
-  </a>
+  <img alt="Minecraft" src="https://img.shields.io/badge/Minecraft-1.21.4-2ea043" />
+  <img alt="Loader" src="https://img.shields.io/badge/Loader-Fabric-db4c3f" />
+  <img alt="Java" src="https://img.shields.io/badge/Java-21-blue" />
+  <a href="https://github.com/0xFOSSMan/obvious-recipes/actions/workflows/gradle.yml"><img alt="Build" src="https://github.com/0xFOSSMan/obvious-recipes/actions/workflows/gradle.yml/badge.svg?branch=main" /></a>
+  <a href="https://github.com/0xFOSSMan/obvious-recipes/actions/workflows/super-linter.yml"><img alt="Lint" src="https://github.com/0xFOSSMan/obvious-recipes/actions/workflows/super-linter.yml/badge.svg?branch=main" /></a>
 </p>
 
-> Obvious Recipes is a Minecraft Forge Mod for 1.12.2 which implements crafting and smelting recipes that Mojang should have added themselves. They just make sense.
+Obvious Recipes ist jetzt ein **Fabric-Mod für Minecraft 1.21.4** und bringt weiterhin "offensichtliche" Crafting- und Smelting-Rezepte ins Spiel.
 
-## Author
+## Features
 
-👤 **0xFOSSMan**
+- Zusätzliche Crafting-Rezepte (z. B. Sattel, Pferderüstungen, Nametag).
+- Recycling-Rezepte für Leder- und Holz-Items.
+- Zusätzliche Ofenrezepte (z. B. Rotten Flesh -> Leather, Metall-Recycling).
 
-* Website: https://0xfossman.github.io/
-* Github: [@0xFOSSMan](https://github.com/0xFOSSMan)
+## Entwicklung
 
-## Show your support
+### Voraussetzungen
 
-Give a ⭐️ if this project helped you!
+- JDK 21
+- Gradle (Wrapper enthalten)
 
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+### Build
+
+```bash
+./gradlew build
+```
+
+### Linting & Formatierung
+
+```bash
+./gradlew spotlessCheck
+./gradlew spotlessApply
+```
+
+## Lizenz
+
+GPL-3.0
