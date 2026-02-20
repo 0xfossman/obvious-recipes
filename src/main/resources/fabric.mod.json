@@ -1,0 +1,26 @@
+{
+    "schemaVersion": 1,
+    "id": "obviousrecipes",
+    "version": "${version}",
+    "name": "Obvious Recipes",
+    "description": "Adds crafting and smelting recipes that feel obvious.",
+    "authors": [
+        "0xFOSSMan"
+    ],
+    "contact": {
+        "homepage": "https://0xfossman.github.io/",
+        "sources": "https://github.com/0xFOSSMan/obvious-recipes"
+    },
+    "license": "GPL-3.0",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "com.fossman.obviousrecipes.ObviousRecipesMod"
+        ]
+    },
+    "depends": {
+        "fabricloader": ">=0.16.10",
+        "minecraft": "~1.21.4",
+        "java": ">=21"
+    }
+}
