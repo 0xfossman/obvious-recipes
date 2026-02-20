@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "  n",
+        " l ",
+        "lf "
+    ],
+    "key": {
+        "l": {
+            "item": "minecraft:leather"
+        },
+        "n": {
+            "item": "minecraft:iron_nugget"
+        },
+        "f": {
+            "item": "minecraft:feather"
+        }
+    },
+    "result": {
+        "id": "minecraft:name_tag"
+    }
+}
