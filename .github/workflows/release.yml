@@ -16,11 +16,19 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25'
+      - run: ./gradlew build --no-daemon
+        working-directory: plugin
       - run: python tools/build.py
       - uses: softprops/action-gh-release@v2
         with:
           files: |
             dist/obvious-recipes-26.3.zip
+            dist/obvious-recipes-resources-26.3.zip
+            dist/obvious-recipes-spawners-26.3.jar
             dist/SHA256SUMS
             CHANGELOG.md
       # A Modrinth upload can be enabled later with MODRINTH_TOKEN. No token is stored here.

@@ -15,11 +15,18 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25'
+      - run: ./gradlew build --no-daemon
+        working-directory: plugin
       - run: python tools/validate.py
       - run: python tools/build.py
       - name: Verify ZIP root and checksum
         run: |
-          unzip -l dist/obvious-recipes-26.3.zip
+          unzip -t dist/obvious-recipes-26.3.zip
+          unzip -t dist/obvious-recipes-resources-26.3.zip
           test "$(unzip -Z1 dist/obvious-recipes-26.3.zip | head -1)" = "data/obviousrecipes/recipe/crafting/cobweb.json" || true
           (cd dist && sha256sum -c SHA256SUMS)
       - uses: actions/upload-artifact@v4

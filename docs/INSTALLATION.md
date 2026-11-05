@@ -7,7 +7,9 @@
 3. Starte neu oder führe als Operator `/reload` aus.
 4. Prüfe mit `/datapack list enabled`, ob Obvious Recipes aktiviert ist.
 
-Das Pack benötigt weder Paper-Plugin noch Mod und funktioniert nach denselben Vanilla-Regeln auch auf einem normalen Java-Server.
+Das Pack benötigt weder Paper-Plugin noch Mod und funktioniert nach denselben Vanilla-Regeln auch auf einem normalen Java-Server. Für den Chicken-Spawner ist zusätzlich das mitgelieferte Paper-Plugin erforderlich: `obvious-recipes-spawners-26.3.jar` nach `<server>/plugins/` kopieren und den Server neu starten.
+
+Für die Kupfereimer-Textur installieren alle Spieler zusätzlich `obvious-recipes-resources-26.3.zip` als Resource Pack. Ein Datapack kann Client-Texturen nicht selbst übertragen.
 
 ## Einzelspieler und Deinstallation
 

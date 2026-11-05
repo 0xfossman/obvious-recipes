@@ -1,0 +1,6 @@
+name: ObviousRecipesSpawners
+version: 26.3.0
+main: com.fossman.obviousrecipes.spawners.ObviousRecipesSpawnersPlugin
+api-version: '26.3'
+description: Places Obvious Recipes crafted spawners for non-operator players.
+author: 0xFOSSMan

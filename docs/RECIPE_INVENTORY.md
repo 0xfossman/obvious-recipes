@@ -15,6 +15,7 @@ All IDs are `obviousrecipes:<folder>/<file>`. “Native” means an ordinary van
 | Golden apple | 8 gold nuggets + apple → golden apple | shaped | current JSON | native | ported |
 | Enchanted golden apple | 8 gold blocks + apple → enchanted golden apple | shaped | current JSON | native | ported |
 | Totem of Undying | golden helmet, emerald block, 3 ominous bottles → totem | shaped | current JSON | native | ported |
+| Copper Bucket | 3 copper ingots → marked vanilla bucket | shaped | new recipe | native + optional resource pack | ported; behaves as a normal bucket, custom empty-bucket appearance needs the resource pack. |
 | Leather boots recycle | leather boots → 4 leather | shapeless | current JSON | native | ported |
 | Leather helmet recycle | leather helmet → 5 leather | shapeless | current JSON | native | ported |
 | Leather leggings recycle | leather leggings → 7 leather | shapeless | current JSON | native | ported |
@@ -36,12 +37,12 @@ All IDs are `obviousrecipes:<folder>/<file>`. “Native” means an ordinary van
 | Iron horse armor smelt | iron horse armor → iron ingot | smelting | current JSON | native | ported |
 | Iron trapdoor smelt | iron trapdoor → 4 iron ingots | smelting | current JSON | native | ported |
 | Iron bars smelt | iron bars → 5 iron nuggets | smelting | current JSON | native | ported |
-| Mob spawner (historical) | 8 iron bars + egg → mob spawner | shaped | historical `f2e4faa` asset JSON | none | **not ported:** normal players cannot place a spawner carrying `block_entity_data`. |
+| Chicken spawner (historical recipe) | 8 iron bars + egg → marked chicken spawner | shaped | historical `f2e4faa` asset JSON | native recipe + Paper plugin | ported. The plugin places and configures it for non-OP players; the datapack alone cannot. |
 
-Together this table accounts for 31 recipes (30 in current `main`, plus one historical spawner).
+Together this table accounts for 32 recipes (30 in current `main`, one restored historical spawner, and Copper Bucket).
 
 ## Spawner feasibility (Minecraft Java 26.3)
 
-`minecraft:block_entity_data` can express `id: "minecraft:mob_spawner"` plus `SpawnData`, but Java refuses to copy that component while a non-operator places a spawner. Advancements and functions have no safe per-crafted-item context that can bypass this permission check. Therefore a vanilla-only pack cannot simultaneously provide selected entity, normal-survival placement, persistence, concurrency safety, and no commands/OP. No spawner recipes are included.
+`minecraft:block_entity_data` can express `id: "minecraft:mob_spawner"` plus `SpawnData`, but Java refuses to copy that component while a non-operator places a spawner. The data pack therefore emits a deliberately marked plain spawner and the optional Paper plugin handles placement, item consumption, and configuration. This preserves normal-survival placement without bypassing vanilla permissions.
 
 If vanilla later removes the restriction, the historical iron-bars pattern may use exactly one centre selector and set both `SpawnData` and `SpawnPotentials`. Candidate selectors from the brief are egg/chicken, rotten flesh/zombie, bone/skeleton, spider eye/spider, gunpowder/creeper, ender pearl/enderman, blaze rod/blaze, and slime ball/slime; they are deliberately not released until normal-player placement works.

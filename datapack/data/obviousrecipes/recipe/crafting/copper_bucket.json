@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "c c",
+    " c "
+  ],
+  "key": {
+    "c": "minecraft:copper_ingot"
+  },
+  "result": {
+    "id": "minecraft:bucket",
+    "components": {
+      "minecraft:custom_name": {
+        "text": "Copper Bucket",
+        "color": "#c8754d",
+        "italic": false
+      },
+      "minecraft:item_model": "obviousrecipes:copper_bucket",
+      "minecraft:custom_data": {
+        "obviousrecipes": {
+          "copper_bucket": true
+        }
+      }
+    }
+  }
+}
