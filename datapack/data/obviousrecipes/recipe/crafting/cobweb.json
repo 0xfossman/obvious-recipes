@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "sss",
+    "ses",
+    "sss"
+  ],
+  "key": {
+    "s": "minecraft:string",
+    "e": "minecraft:spider_eye"
+  },
+  "result": {
+    "id": "minecraft:cobweb",
+    "count": 8
+  }
+}

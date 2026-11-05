@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": "minecraft:iron_bars",
+  "result": {
+    "id": "minecraft:iron_nugget",
+    "count": 5
+  },
+  "experience": 1.0,
+  "cookingtime": 200
+}

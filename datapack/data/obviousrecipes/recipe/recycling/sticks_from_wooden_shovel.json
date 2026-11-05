@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:wooden_shovel"
+  ],
+  "result": {
+    "id": "minecraft:stick",
+    "count": 2
+  }
+}

@@ -1,42 +1,31 @@
-<h1 align="center">Obvious Recipes</h1>
-<p align="center"><img src="logo.png" width="220" alt="Obvious Recipes logo" /></p>
+# Obvious Recipes
 
-<p align="center">
-  <img alt="Minecraft" src="https://img.shields.io/badge/Minecraft-1.21.4-2ea043" />
-  <img alt="Loader" src="https://img.shields.io/badge/Loader-Fabric-db4c3f" />
-  <img alt="Java" src="https://img.shields.io/badge/Java-21-blue" />
-  <a href="https://github.com/0xFOSSMan/obvious-recipes/actions/workflows/gradle.yml"><img alt="Build" src="https://github.com/0xFOSSMan/obvious-recipes/actions/workflows/gradle.yml/badge.svg?branch=main" /></a>
-  <a href="https://github.com/0xFOSSMan/obvious-recipes/actions/workflows/super-linter.yml"><img alt="Lint" src="https://github.com/0xFOSSMan/obvious-recipes/actions/workflows/super-linter.yml/badge.svg?branch=main" /></a>
-</p>
+Obvious Recipes is a GPL-3.0, dependency-free data pack for **Minecraft Java 26.3**. It runs on vanilla servers, Paper 26.3, and singleplayer—no client installation, mod loader, or plugin required.
 
-Obvious Recipes ist jetzt ein **Fabric-Mod für Minecraft 1.21.4** und bringt weiterhin "offensichtliche" Crafting- und Smelting-Rezepte ins Spiel.
+It adds sensible crafting, recycling, and furnace recipes: saddle, name tag, cobweb, iron/golden/diamond horse armor, golden and enchanted golden apples, and a Totem of Undying; leather, wool, nether-wart-block, and wooden-tool recycling; and rotten-flesh plus metal recovery smelting recipes.
 
-## Features
+The exact ingredients, yields, IDs, and migration status of every source recipe are in [docs/RECIPE_INVENTORY.md](docs/RECIPE_INVENTORY.md). This is the authoritative recipe list.
 
-- Zusätzliche Crafting-Rezepte (z. B. Sattel, Pferderüstungen, Nametag).
-- Recycling-Rezepte für Leder- und Holz-Items.
-- Zusätzliche Ofenrezepte (z. B. Rotten Flesh -> Leather, Metall-Recycling).
+## Install
 
-## Entwicklung
+Build locally:
 
-### Voraussetzungen
-
-- JDK 21
-- Gradle (Wrapper enthalten)
-
-### Build
-
-```bash
-./gradlew build
+```sh
+python tools/build.py
 ```
 
-### Linting & Formatierung
+Place `dist/obvious-recipes-26.3.zip` directly in the world’s `datapacks` directory, then restart or run `/reload`. The complete German Paper and singleplayer guide is [docs/INSTALLATION.md](docs/INSTALLATION.md).
 
-```bash
-./gradlew spotlessCheck
-./gradlew spotlessApply
-```
+## Spawners
 
-## Lizenz
+The legacy repository once contained a generic spawner recipe. It is not included: Java 26.3 requires operator permission for a player to place a spawner that contains block-entity data, so a configurable survival-spawner recipe cannot be implemented reliably by a vanilla data pack. The limitation is documented in the inventory rather than hidden behind a nonfunctional recipe.
 
-GPL-3.0
+## Development and release
+
+`python tools/validate.py` validates the pack; `python tools/build.py` additionally creates a reproducible ZIP and SHA-256 checksum. GitHub Actions validates every push/PR and includes a tag/manual GitHub-release workflow. A future Modrinth **Data Pack** upload can consume the `MODRINTH_TOKEN` secret; no secret is committed.
+
+See [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) for manual Minecraft/Paper verification.
+
+## License
+
+[GPL-3.0](LICENSE). Source: <https://github.com/0xFOSSMan/obvious-recipes>.

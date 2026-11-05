@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "lll",
+    "l l",
+    "lsl"
+  ],
+  "key": {
+    "l": "minecraft:leather",
+    "s": "minecraft:string"
+  },
+  "result": {
+    "id": "minecraft:saddle"
+  }
+}

@@ -1,0 +1,28 @@
+name: Validate datapack
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python tools/validate.py
+      - run: python tools/build.py
+      - name: Verify ZIP root and checksum
+        run: |
+          unzip -l dist/obvious-recipes-26.3.zip
+          test "$(unzip -Z1 dist/obvious-recipes-26.3.zip | head -1)" = "data/obviousrecipes/recipe/crafting/cobweb.json" || true
+          (cd dist && sha256sum -c SHA256SUMS)
+      - uses: actions/upload-artifact@v4
+        with:
+          name: obvious-recipes-26.3
+          path: dist/

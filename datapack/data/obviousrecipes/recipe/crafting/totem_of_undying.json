@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " g ",
+    " e ",
+    "ooo"
+  ],
+  "key": {
+    "g": "minecraft:golden_helmet",
+    "e": "minecraft:emerald_block",
+    "o": "minecraft:ominous_bottle"
+  },
+  "result": {
+    "id": "minecraft:totem_of_undying"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ggg",
+    "gag",
+    "ggg"
+  ],
+  "key": {
+    "g": "minecraft:gold_nugget",
+    "a": "minecraft:apple"
+  },
+  "result": {
+    "id": "minecraft:golden_apple"
+  }
+}
